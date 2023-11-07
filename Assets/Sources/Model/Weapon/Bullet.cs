@@ -1,7 +1,4 @@
-﻿using System;
-using UnityEngine;
-
-namespace Asteroids.Model
+﻿namespace Asteroids.Model.Sources.Model.Weapon
 {
     public abstract class Bullet
     {

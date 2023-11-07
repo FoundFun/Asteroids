@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Collections;
+using Asteroids.Model.Sources.Model.Enemies;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Asteroids.Model
+namespace Asteroids.Model.Sources.Model.Simulations
 {
     public class EnemiesSpawner
     {

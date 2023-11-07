@@ -1,9 +1,10 @@
-﻿using UnityEngine;
-using System.Collections;
-using Asteroids.Model;
+﻿using System.Collections;
+using Asteroids.Model.Sources.Model;
+using Sources.View;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace CompositeRoot
+namespace Sources.CompositeRoot
 {
     public class PhysicsRoutingCompositeRoot : CompositeRoot
     {

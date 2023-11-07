@@ -1,4 +1,4 @@
-﻿namespace Asteroids.Model
+﻿namespace Asteroids.Model.Sources.Model
 {
     public static class Config
     {

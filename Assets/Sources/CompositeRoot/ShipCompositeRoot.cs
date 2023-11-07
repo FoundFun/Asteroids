@@ -1,11 +1,11 @@
-using Asteroids.Input;
-using Asteroids.Model;
-using System;
-using System.Collections.Generic;
+using Asteroids.Model.Sources.Model;
+using Asteroids.Model.Sources.Model.Simulations;
+using Asteroids.Model.Sources.Model.Weapon;
+using Sources.Input;
+using Sources.View;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-namespace CompositeRoot
+namespace Sources.CompositeRoot
 {
     public class ShipCompositeRoot : CompositeRoot
     {

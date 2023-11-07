@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-namespace Asteroids.Model
+namespace Asteroids.Model.Sources.Model
 {
     public class Ship : Transformable
     {

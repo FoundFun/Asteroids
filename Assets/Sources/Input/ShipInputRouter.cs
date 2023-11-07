@@ -1,89 +1,93 @@
 using Asteroids.Input;
-using Asteroids.Model;
+using Asteroids.Model.Sources.Model;
+using Asteroids.Model.Sources.Model.Weapon;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class ShipInputRouter
+namespace Sources.Input
 {
-    private ShipInput _input;
-    private InertMovement _inertMovement;
-    private ShipMovement _shipMovement;
-
-    private DefaultGun _firstGunSlot;
-    private DefaultGun _secondGunSlot;
-
-    public float Speed => _inertMovement.Acceleration.magnitude;
-
-    public ShipInputRouter(ShipMovement shipMovement)
+    public class ShipInputRouter
     {
-        _input = new ShipInput();
-        _inertMovement = new InertMovement();
-        _shipMovement = shipMovement;
-    }
+        private ShipInput _input;
+        private InertMovement _inertMovement;
+        private ShipMovement _shipMovement;
 
-    public void OnEnable()
-    {
-        _input.Enable();
-        _input.Ship.FirstSlotShoot.performed += OnFirstSlootShoot;
-        _input.Ship.SecondSlotShoot.performed += OnSecondSlootShoot;
-    }
+        private DefaultGun _firstGunSlot;
+        private DefaultGun _secondGunSlot;
 
-    public void OnDisable()
-    {
-        _input.Disable();
-        _input.Ship.FirstSlotShoot.performed -= OnFirstSlootShoot;
-        _input.Ship.SecondSlotShoot.performed -= OnSecondSlootShoot;
-    }
+        public float Speed => _inertMovement.Acceleration.magnitude;
 
-    public void Update()
-    {
-        if (MoveForwardPerformed())
-            _inertMovement.Accelerate(_shipMovement.Forward, Time.deltaTime);
-        else
-            _inertMovement.Slowdown(Time.deltaTime);
+        public ShipInputRouter(ShipMovement shipMovement)
+        {
+            _input = new ShipInput();
+            _inertMovement = new InertMovement();
+            _shipMovement = shipMovement;
+        }
 
-        _shipMovement.Move(_inertMovement.Acceleration);
-        TryRotate();
-    }
+        public void OnEnable()
+        {
+            _input.Enable();
+            _input.Ship.FirstSlotShoot.performed += OnFirstSlootShoot;
+            _input.Ship.SecondSlotShoot.performed += OnSecondSlootShoot;
+        }
 
-    public ShipInputRouter BindGunToFirstSlot(DefaultGun gun)
-    {
-        _firstGunSlot = gun;
-        return this;
-    }
+        public void OnDisable()
+        {
+            _input.Disable();
+            _input.Ship.FirstSlotShoot.performed -= OnFirstSlootShoot;
+            _input.Ship.SecondSlotShoot.performed -= OnSecondSlootShoot;
+        }
 
-    public ShipInputRouter BindGunToSecondSlot(DefaultGun gun)
-    {
-        _secondGunSlot = gun;
-        return this;
-    }
+        public void Update()
+        {
+            if (MoveForwardPerformed())
+                _inertMovement.Accelerate(_shipMovement.Forward, Time.deltaTime);
+            else
+                _inertMovement.Slowdown(Time.deltaTime);
 
-    private bool MoveForwardPerformed()
-    {
-        return _input.Ship.MoveForward.phase == InputActionPhase.Performed;
-    }
+            _shipMovement.Move(_inertMovement.Acceleration);
+            TryRotate();
+        }
 
-    private void OnFirstSlootShoot(InputAction.CallbackContext obj)
-    {
-        TryShoot(_firstGunSlot);
-    }
+        public ShipInputRouter BindGunToFirstSlot(DefaultGun gun)
+        {
+            _firstGunSlot = gun;
+            return this;
+        }
 
-    private void OnSecondSlootShoot(InputAction.CallbackContext obj)
-    {
-        TryShoot(_secondGunSlot);
-    }
+        public ShipInputRouter BindGunToSecondSlot(DefaultGun gun)
+        {
+            _secondGunSlot = gun;
+            return this;
+        }
 
-    private void TryShoot(DefaultGun gun)
-    {
-        if (gun.CanShoot())
-            gun.Shoot();
-    }
+        private bool MoveForwardPerformed()
+        {
+            return _input.Ship.MoveForward.phase == InputActionPhase.Performed;
+        }
 
-    private void TryRotate()
-    {
-        float direction = _input.Ship.Rotate.ReadValue<float>();
+        private void OnFirstSlootShoot(InputAction.CallbackContext obj)
+        {
+            TryShoot(_firstGunSlot);
+        }
 
-        if(direction != 0)
-            _shipMovement.Rotate(direction, Time.deltaTime);
+        private void OnSecondSlootShoot(InputAction.CallbackContext obj)
+        {
+            TryShoot(_secondGunSlot);
+        }
+
+        private void TryShoot(DefaultGun gun)
+        {
+            if (gun.CanShoot())
+                gun.Shoot();
+        }
+
+        private void TryRotate()
+        {
+            float direction = _input.Ship.Rotate.ReadValue<float>();
+
+            if(direction != 0)
+                _shipMovement.Rotate(direction, Time.deltaTime);
+        }
     }
 }

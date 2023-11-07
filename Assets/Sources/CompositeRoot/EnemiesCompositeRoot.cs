@@ -1,10 +1,8 @@
-﻿using Asteroids.Input;
-using Asteroids.Model;
-using System.Collections.Generic;
+﻿using Asteroids.Model.Sources.Model.Simulations;
+using Sources.View;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-namespace CompositeRoot
+namespace Sources.CompositeRoot
 {
     public class EnemiesCompositeRoot : CompositeRoot
     {

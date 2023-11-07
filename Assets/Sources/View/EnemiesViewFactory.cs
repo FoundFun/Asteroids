@@ -1,23 +1,25 @@
-﻿using Asteroids.Model;
-using System;
-using System.Collections.Generic;
+﻿using System;
+using Asteroids.Model.Sources.Model.Enemies;
 using UnityEngine;
 
-public class EnemiesViewFactory : TransformableViewFactory<Enemy>
+namespace Sources.View
 {
-    [SerializeField] private TransformableView _asteroid;
-    [SerializeField] private TransformableView _partOfAsteroid;
-    [SerializeField] private TransformableView _nlo; 
-
-    protected override TransformableView GetTemplate(Enemy enemy)
+    public class EnemiesViewFactory : TransformableViewFactory<Enemy>
     {
-        if (enemy is PartOfAsteroid)
-            return _partOfAsteroid;
-        else if (enemy is Asteroid)
-            return _asteroid;
-        else if (enemy is Nlo)
-            return _nlo;
+        [SerializeField] private TransformableView _asteroid;
+        [SerializeField] private TransformableView _partOfAsteroid;
+        [SerializeField] private TransformableView _nlo; 
 
-        throw new InvalidOperationException();
+        protected override TransformableView GetTemplate(Enemy enemy)
+        {
+            if (enemy is PartOfAsteroid)
+                return _partOfAsteroid;
+            else if (enemy is Asteroid)
+                return _asteroid;
+            else if (enemy is Nlo)
+                return _nlo;
+
+            throw new InvalidOperationException();
+        }
     }
 }

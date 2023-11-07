@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Asteroids.Model.Sources.Model.Weapon;
 using UnityEngine;
 
-namespace Asteroids.Model
+namespace Asteroids.Model.Sources.Model.Simulations
 {
     public class BulletsSimulation : Simulation<Bullet>
     {

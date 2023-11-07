@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Asteroids.Model
+namespace Asteroids.Model.Sources.Model
 {
     public abstract class Transformable
     {

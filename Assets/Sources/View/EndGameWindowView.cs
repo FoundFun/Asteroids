@@ -2,18 +2,21 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-class EndGameWindowView : MonoBehaviour
+namespace Sources.View
 {
-    [SerializeField] private Button _restartButton;
-    [SerializeField] private Text _scoreLabel;
-
-    public void Show(int score, Action onReloadClick)
+    class EndGameWindowView : MonoBehaviour
     {
-        _scoreLabel.text = $"You Score - {score}";
+        [SerializeField] private Button _restartButton;
+        [SerializeField] private Text _scoreLabel;
 
-        _restartButton.onClick.RemoveAllListeners();
-        _restartButton.onClick.AddListener(() => onReloadClick());
+        public void Show(int score, Action onReloadClick)
+        {
+            _scoreLabel.text = $"You Score - {score}";
 
-        gameObject.SetActive(true);
+            _restartButton.onClick.RemoveAllListeners();
+            _restartButton.onClick.AddListener(() => onReloadClick());
+
+            gameObject.SetActive(true);
+        }
     }
 }

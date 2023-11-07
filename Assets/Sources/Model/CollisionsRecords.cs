@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using static Asteroids.Model.PhysicsRouter;
+using Asteroids.Model.Sources.Model.Enemies;
+using Asteroids.Model.Sources.Model.Simulations;
+using Asteroids.Model.Sources.Model.Weapon;
+using static Asteroids.Model.Sources.Model.PhysicsRouter;
 
-namespace Asteroids.Model
+namespace Asteroids.Model.Sources.Model
 {
     public class CollisionsRecords
     {

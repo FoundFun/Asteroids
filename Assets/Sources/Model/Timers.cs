@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Asteroids.Model
+namespace Asteroids.Model.Sources.Model
 {
     class Timers<T>
     {

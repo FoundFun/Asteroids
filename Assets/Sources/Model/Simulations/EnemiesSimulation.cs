@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Asteroids.Model.Sources.Model.Enemies;
 
-namespace Asteroids.Model
+namespace Asteroids.Model.Sources.Model.Simulations
 {
     public class EnemiesSimulation : Simulation<Enemy>
     {

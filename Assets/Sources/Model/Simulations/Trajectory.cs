@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Asteroids.Model
+namespace Asteroids.Model.Sources.Model.Simulations
 {
     public class Trajectory : Transformable
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Asteroids.Model
+namespace Asteroids.Model.Sources.Model.Enemies
 {
     public class Asteroid : Enemy
     {
