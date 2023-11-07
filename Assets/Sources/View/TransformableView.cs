@@ -20,9 +20,7 @@ namespace Sources.View
             transform.rotation = Quaternion.Euler(0, 0, _model.Rotation);
         }
 
-        private Vector3 GetViewportPosition()
-        {
-            return new Vector3(_model.Position.x, _model.Position.y, 1);
-        }
+        private Vector3 GetViewportPosition() => 
+            new Vector3(_model.Position.x, _model.Position.y, 1);
     }
 }

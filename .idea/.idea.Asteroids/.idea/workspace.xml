@@ -1,5 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="99edfcea-18ca-4711-8d9a-f2ba24219702" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Sources/Model/Collisions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sources/Model/Collisions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sources/Model/Record.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sources/Model/Record.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sources/Model/TargetRecord.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sources/Model/TargetRecord.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sources/Model/Timer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sources/Model/Timer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/CompositeRoot/CompositeRoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/CompositeRoot/CompositeRoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/CompositeRoot/CompositionOrder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/CompositeRoot/CompositionOrder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/CompositeRoot/EnemiesCompositeRoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/CompositeRoot/EnemiesCompositeRoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/CompositeRoot/PhysicsRoutingCompositeRoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/CompositeRoot/PhysicsRoutingCompositeRoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/CompositeRoot/ShipCompositeRoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/CompositeRoot/ShipCompositeRoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Input/ShipInputRouter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Input/ShipInputRouter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/CollisionsRecords.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/CollisionsRecords.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/Config.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/Config.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/Enemies/Asteroid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/Enemies/Asteroid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/Enemies/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/Enemies/Nlo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/Enemies/Nlo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/InertMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/InertMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/PhysicsRouter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/PhysicsRouter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/Ship.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/Ship.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/ShipMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/ShipMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/Simulations/BulletsSimulation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/Simulations/BulletsSimulation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/Simulations/EnemiesSimulation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/Simulations/EnemiesSimulation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/Simulations/EnemiesSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/Simulations/EnemiesSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/Simulations/Simulation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/Simulations/Simulation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/Simulations/Trajectory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/Simulations/Trajectory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/Timers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/Timers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/Transformable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/Transformable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/Weapon/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/Weapon/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/Weapon/DefaultGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/Weapon/DefaultGun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/Weapon/LaserGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/Weapon/LaserGun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/Model/Weapon/LaserGunRollback.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/Model/Weapon/LaserGunRollback.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/View/EndGameWindowView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/View/EndGameWindowView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/View/EnemiesViewFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/View/EnemiesViewFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/View/PhysicsEventsBroadcaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/View/PhysicsEventsBroadcaster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/View/ShipDebugUIView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/View/ShipDebugUIView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/View/TransformableView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/View/TransformableView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sources/View/TransformableViewFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sources/View/TransformableViewFactory.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2XqTtKnpXtZmKb9hgSidWpfIUwJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="rider.run.widget.enabled.cache" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
@@ -21,5 +86,37 @@
       </option>
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="99edfcea-18ca-4711-8d9a-f2ba24219702" name="Changes" comment="" />
+      <created>1699355824860</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699355824860</updated>
+      <workItem from="1699355847619" duration="911000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

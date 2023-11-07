@@ -24,18 +24,14 @@ namespace Sources.CompositeRoot
             _router = new PhysicsRouter(_records.Values);
             _shipEventsBroadcaster.Init(_router, _shipRoot.Model);
             
-            StartCoroutine(GetRouterSteper());
+            StartCoroutine(GetRouterStepper());
         }
 
-        private void OnEnable()
-        {
+        private void OnEnable() => 
             _records.GameEnd += OnGameEnd;
-        }
 
-        private void OnDisable()
-        {
+        private void OnDisable() => 
             _records.GameEnd -= OnGameEnd;
-        }
 
         private void OnGameEnd()
         {
@@ -47,7 +43,7 @@ namespace Sources.CompositeRoot
             });
         }
 
-        private IEnumerator GetRouterSteper()
+        private IEnumerator GetRouterStepper()
         {
             while (true)
             {

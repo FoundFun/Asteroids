@@ -6,9 +6,9 @@ namespace Asteroids.Model.Sources.Model.Simulations
 { 
     public abstract class Simulation<T>
     {
-        private List<PlacedEntity> _entities = new List<PlacedEntity>();
+        private readonly List<PlacedEntity> _entities = new List<PlacedEntity>();
 
-        public IEnumerable<PlacedEntity> Entities => _entities;
+        protected IEnumerable<PlacedEntity> Entities => _entities;
 
         public event Action<PlacedEntity> Start;
         public event Action<PlacedEntity> End;

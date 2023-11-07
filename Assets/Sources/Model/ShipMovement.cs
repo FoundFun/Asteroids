@@ -10,15 +10,11 @@ namespace Asteroids.Model.Sources.Model
 
         public Vector2 Forward => Quaternion.Euler(0, 0, _ship.Rotation) * Vector3.up;
 
-        public ShipMovement(Ship ship)
-        {
+        public ShipMovement(Ship ship) => 
             _ship = ship;
-        }
 
-        public void Move(Vector2 delta)
-        {
+        public void Move(Vector2 delta) => 
             _ship.MoveLooped(delta);
-        }
 
         public void Rotate(float direction, float deltaTime) 
         {

@@ -61,20 +61,14 @@ namespace Sources.Input
             return this;
         }
 
-        private bool MoveForwardPerformed()
-        {
-            return _input.Ship.MoveForward.phase == InputActionPhase.Performed;
-        }
+        private bool MoveForwardPerformed() => 
+            _input.Ship.MoveForward.phase == InputActionPhase.Performed;
 
-        private void OnFirstSlootShoot(InputAction.CallbackContext obj)
-        {
+        private void OnFirstSlootShoot(InputAction.CallbackContext obj) => 
             TryShoot(_firstGunSlot);
-        }
 
-        private void OnSecondSlootShoot(InputAction.CallbackContext obj)
-        {
+        private void OnSecondSlootShoot(InputAction.CallbackContext obj) => 
             TryShoot(_secondGunSlot);
-        }
 
         private void TryShoot(DefaultGun gun)
         {

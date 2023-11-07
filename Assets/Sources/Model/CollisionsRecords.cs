@@ -20,7 +20,7 @@ namespace Asteroids.Model.Sources.Model
             _enemies = enemies;
         }
 
-        public IEnumerable<Record> Values()
+        public IEnumerable<TargetRecord> Values()
         {
             yield return IfCollided((Bullet bullet, Enemy enemy) =>
             {
@@ -49,7 +49,7 @@ namespace Asteroids.Model.Sources.Model
             });
         }
 
-        private Record IfCollided<T1, T2>(Action<T1, T2> action)
+        private TargetRecord IfCollided<T1, T2>(Action<T1, T2> action)
         {
             return new Record<T1, T2>(action);
         }

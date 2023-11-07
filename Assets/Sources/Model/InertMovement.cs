@@ -4,21 +4,19 @@ namespace Asteroids.Model.Sources.Model
 {
     public class InertMovement
     {
-        private readonly float _unitsPerSecond = 0.001f;
-        private readonly float _maxSpeed = 0.0015f;
-        private readonly float _secondsToStop = 1f;
+        private const float UnitsPerSecond = 0.001f;
+        private const float MaxSpeed = 0.0015f;
+        private const float SecondsToStop = 1f;
 
         public Vector2 Acceleration { get; private set; }
 
         public void Accelerate(Vector2 forward, float deltaTime)
         {
-            Acceleration += forward * (_unitsPerSecond * deltaTime);
-            Acceleration = Vector2.ClampMagnitude(Acceleration, _maxSpeed);
+            Acceleration += forward * (UnitsPerSecond * deltaTime);
+            Acceleration = Vector2.ClampMagnitude(Acceleration, MaxSpeed);
         }
 
-        public void Slowdown(float deltaTime)
-        {
-            Acceleration -= Acceleration * (deltaTime / _secondsToStop);
-        }
+        public void Slowdown(float deltaTime) => 
+            Acceleration -= Acceleration * (deltaTime / SecondsToStop);
     }
 }

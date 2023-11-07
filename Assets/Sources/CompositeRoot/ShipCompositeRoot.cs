@@ -44,10 +44,8 @@ namespace Sources.CompositeRoot
             _laserGunRollback = new LaserGunRollback(_laserGun, Config.LaserCooldown);
         }
 
-        public void DisableShip()
-        {
+        public void DisableShip() => 
             _shipInputRouter.OnDisable();
-        }
 
         private void OnEnable()
         {
@@ -78,9 +76,7 @@ namespace Sources.CompositeRoot
             _laserGunRollback.Tick(Time.deltaTime);
         }
 
-        private void OnShot(Bullet bullet)
-        {
+        private void OnShot(Bullet bullet) => 
             _bulletsSimulation.Simulate(bullet, _shipModel.Position, _shipMovement.Forward);
-        }
     }
 }

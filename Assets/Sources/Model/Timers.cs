@@ -6,17 +6,13 @@ namespace Asteroids.Model.Sources.Model
 {
     class Timers<T>
     {
-        private List<Timer> _timers = new List<Timer>();
+        private List<Timer<T>> _timers = new List<Timer<T>>();
 
-        public void Start(T context, float time, Action<T> onEnd)
-        {
-            _timers.Add(new Timer(context, time, onEnd));
-        }
+        public void Start(T context, float time, Action<T> onEnd) => 
+            _timers.Add(new Timer<T>(context, time, onEnd));
 
-        public void StopAll (T context)
-        {
+        public void StopAll (T context) => 
             _timers.RemoveAll(timer => timer.Context.Equals(context));
-        }
 
         public void Tick(float deltaTime)
         {
@@ -32,26 +28,7 @@ namespace Asteroids.Model.Sources.Model
             }
         }
 
-        public float GetAccumulatedTime(T context)
-        {
-            return _timers.First(timer => timer.Context.Equals(context)).AccumulatedTime;
-        }
-
-        private class Timer
-        {
-            public float AccumulatedTime;
-            public readonly float Time;
-            public readonly T Context;
-            public readonly Action<T> OnEnd;
-
-            public bool IsEnd => Time <= AccumulatedTime;
-
-            public Timer(T context, float time, Action<T> onEnd)
-            {
-                Time = time;
-                Context = context;
-                OnEnd = onEnd;
-            }
-        }
+        public float GetAccumulatedTime(T context) => 
+            _timers.First(timer => timer.Context.Equals(context)).AccumulatedTime;
     }
 }

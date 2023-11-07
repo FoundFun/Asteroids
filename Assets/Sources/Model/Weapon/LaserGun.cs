@@ -4,7 +4,7 @@ namespace Asteroids.Model.Sources.Model.Weapon
 {
     public class LaserGun : DefaultGun
     {
-        private int _bulletsPerShot;
+        private readonly int _bulletsPerShot;
 
         public int Bullets { get; private set; }
         public int MaxBullets { get; private set; }

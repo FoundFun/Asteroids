@@ -8,7 +8,6 @@ namespace Sources.View
     public class ShipDebugUIView : MonoBehaviour
     {
         [SerializeField] private ShipCompositeRoot _ship;
-
         [SerializeField] private Text _positionLabel;
         [SerializeField] private Text _rotationLabel;
         [SerializeField] private Text _speedLabel;
@@ -29,7 +28,6 @@ namespace Sources.View
             _ship.LaserGun.ShotAdd += OnLaserGunShotAdd;
         }
 
-
         private void Update()
         {
             _positionLabel.text = $"Position: {_ship.Model.Position}";
@@ -38,19 +36,13 @@ namespace Sources.View
             _laserRollbackLabel.text = $"To Rollback: {(_ship.LaserGunRollback.Cooldown - _ship.LaserGunRollback.AccumulatedTime):0.0}";
         }
 
-        private void OnLaserGunShot(Bullet bullet)
-        {
+        private void OnLaserGunShot(Bullet bullet) => 
             UpdateLasersCount();
-        }
 
-        private void OnLaserGunShotAdd()
-        {
+        private void OnLaserGunShotAdd() => 
             UpdateLasersCount();
-        }
 
-        private void UpdateLasersCount()
-        {
+        private void UpdateLasersCount() => 
             _laserBulletsLabel.text = $"Lasers: {_ship.LaserGun.Bullets} / {_ship.LaserGun.MaxBullets}";
-        }
     }
 }

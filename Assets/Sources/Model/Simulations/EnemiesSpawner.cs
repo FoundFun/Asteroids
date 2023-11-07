@@ -42,20 +42,14 @@ namespace Asteroids.Model.Sources.Model.Simulations
             _queue.Start(_variants[1], 25, (factory) => _simulation.Simulate(factory.Invoke()));
         }
 
-        public void Update(float deltaTime)
-        {
+        public void Update(float deltaTime) => 
             _queue.Tick(deltaTime);
-        }
 
-        private Vector2 GetRandomPositionOutsideScreen()
-        {
-            return Random.insideUnitCircle.normalized + new Vector2(0.5F, 0.5F);
-        }
+        private Vector2 GetRandomPositionOutsideScreen() => 
+            Random.insideUnitCircle.normalized + new Vector2(0.5F, 0.5F);
 
-        private Nlo CreateNlo()
-        {
-            return new Nlo(_player, GetRandomPositionOutsideScreen(), Config.NloSpeed);
-        }
+        private Nlo CreateNlo() => 
+            new Nlo(_player, GetRandomPositionOutsideScreen(), Config.NloSpeed);
 
         private Asteroid CreateAsteroid()
         {
@@ -65,9 +59,7 @@ namespace Asteroids.Model.Sources.Model.Simulations
             return new Asteroid(postion, direction, Config.AsteroidSpeed);
         }
 
-        private static Vector2 GetDirectionThroughtScreen(Vector2 postion)
-        {
-            return (new Vector2(Random.value, Random.value) - postion).normalized;
-        }
+        private static Vector2 GetDirectionThroughtScreen(Vector2 postion) => 
+            (new Vector2(Random.value, Random.value) - postion).normalized;
     }
 }

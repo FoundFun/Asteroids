@@ -5,7 +5,7 @@ namespace Asteroids.Model.Sources.Model.Simulations
 {
     public class BulletsSimulation : Simulation<Bullet>
     {
-        private readonly Timers<Simulation<Bullet>.PlacedEntity> _timers = new Timers<Simulation<Bullet>.PlacedEntity>();
+        private readonly Timers<PlacedEntity> _timers = new Timers<PlacedEntity>();
 
         public void Simulate(Bullet bullet, Vector2 startPosition, Vector2 direction)
         {
@@ -18,14 +18,10 @@ namespace Asteroids.Model.Sources.Model.Simulations
             Simulate(placedEntity);
         }
 
-        public override void Update(float deltaTime)
-        {
+        public override void Update(float deltaTime) => 
             _timers.Tick(deltaTime);
-        }
 
-        protected override void OnStoped(PlacedEntity placedEntity)
-        {
+        protected override void OnStoped(PlacedEntity placedEntity) => 
             _timers.StopAll(placedEntity);
-        }
     }
 }

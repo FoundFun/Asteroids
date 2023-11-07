@@ -13,9 +13,7 @@ namespace Asteroids.Model.Sources.Model
             Rotation = rotation;
         }
 
-        public void Rotate(float delta)
-        {
+        public void Rotate(float delta) => 
             Rotation = Mathf.Repeat(Rotation + delta, 360);
-        }
     }
 }

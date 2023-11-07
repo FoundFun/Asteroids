@@ -13,15 +13,11 @@ namespace Asteroids.Model.Sources.Model.Enemies
             _speed = speed;
         }
 
-        public override void Update(float deltaTime)
-        {
-            Position = Position + _direction * _speed * deltaTime;
-        }
+        public override void Update(float deltaTime) => 
+            Position += _direction * _speed * deltaTime;
 
-        public PartOfAsteroid CreatePart()
-        {
-            return new PartOfAsteroid(Position, Random.insideUnitCircle.normalized, _speed / 2);
-        }
+        public PartOfAsteroid CreatePart() => 
+            new PartOfAsteroid(Position, Random.insideUnitCircle.normalized, _speed / 2);
     }
 
     public class PartOfAsteroid : Asteroid
