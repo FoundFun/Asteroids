@@ -1,0 +1,16 @@
+{
+    "name": "CameraBehaviour",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c166c29dbb53d2a48b9850fec88c66ec"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

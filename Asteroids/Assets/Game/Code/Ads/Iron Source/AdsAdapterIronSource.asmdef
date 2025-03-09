@@ -1,0 +1,18 @@
+{
+    "name": "AdsAdapterIronSource",
+    "rootNamespace": "",
+    "references": [
+        "GUID:4cb1098060953fa4490cf4f0fe416606",
+        "GUID:760a4c7888534400e882b82c5b3fba06",
+        "GUID:763b637c861d44645adff1e9b75727d7"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

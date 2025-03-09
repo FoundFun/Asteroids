@@ -1,0 +1,20 @@
+{
+    "name": "LaserUI",
+    "rootNamespace": "",
+    "references": [
+        "GUID:560b04d1a97f54a4e82edc0cbbb69285",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:b4d3afaae8e79dc4eb71fc45ee53baec",
+        "GUID:9c574990f9ad5294f831db18ff53784f",
+        "GUID:571d32604a0b2ea4db3953bf9013dbec"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

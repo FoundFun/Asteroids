@@ -1,0 +1,19 @@
+{
+    "name": "FactoryService",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:f5e348ead2cd27a439dd7d8e60b691fe",
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4",
+        "GUID:d2c7849fb8580f741b4e612acabef40a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

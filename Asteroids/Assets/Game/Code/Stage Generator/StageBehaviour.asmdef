@@ -1,0 +1,17 @@
+{
+    "name": "StageBehaviour",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d2c7849fb8580f741b4e612acabef40a",
+        "GUID:ece6089ed191cdd4684890eb75513e5d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
